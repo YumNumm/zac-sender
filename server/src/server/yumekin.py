@@ -54,7 +54,6 @@ class YumekinSender:
         )
 
     def __select_status__(self, type: YumekinSendType) -> None:
-        # Html tag is <input> and value is type.value
         xpath = f"//span[contains(.,'{type.value}')]"
 
         print(xpath)
